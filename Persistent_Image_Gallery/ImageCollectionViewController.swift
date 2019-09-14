@@ -23,9 +23,11 @@ class ImageCollectionViewController: UICollectionViewController, UICollectionVie
         
         createTrashButton()
         
+        //do not really know how much memory I need to give
+        //for it will be 100Mb
         URLCache.shared = URLCache(
-            memoryCapacity: 1000*1024*1024,
-            diskCapacity: 1000*1024*1024,
+            memoryCapacity: 100*1024*1024,
+            diskCapacity: 100*1024*1024,
             diskPath: nil
         )
     }
